@@ -23,10 +23,15 @@ favicon.ico   ブラウザタブのアイコン
 
 ## 公開のしかた
 
-静的ファイルのみなので、フォルダの中身をそのままアップロードすれば
-FC2ホームページ(FTP)でも、GitHub Pages / Netlify などでも公開できます。
-旧サイトと同じファイル名(index.html など)なので、FC2に上書きアップロードすれば
-今のURLのまま切り替わります。
+公開URL: https://atelierunpeu.com/ (GitHub Pages + Cloudflare Registrarのドメイン)
+
+ファイルを編集したら、このフォルダで次を実行すると1〜2分で本番に反映されます。
+
+```bash
+git add -A && git commit -m "更新内容をここに書く" && git push
+```
+
+※ `CNAME` ファイル(中身は atelierunpeu.com の1行)は独自ドメインの設定なので消さないこと。
 
 ※文字コードは旧サイトの Shift_JIS から UTF-8 に変更済み。
 各HTMLに `<meta charset="UTF-8">` を入れてあるのでそのままで動きます。
